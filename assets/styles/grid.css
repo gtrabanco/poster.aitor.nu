@@ -1,16 +1,20 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body {
+  text-align: center;
 }
 
 main {
   display: grid;
   gap: 1rem;
   grid-auto-flow: dense;
-  grid-auto-rows: 22rem;
+  grid-auto-rows: auto;
   grid-template-columns: repeat(auto-fill, minmax(min(100%,22rem), 1fr));
   row-gap: 2rem;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  grid-column: span 100%;
 }
 
 a {
@@ -24,6 +28,7 @@ a:focus {
 
 .card img {
   width: 100%;
+  height: auto;
 }
 
 .featured {
