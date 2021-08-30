@@ -13,7 +13,7 @@ header {
 header h1 {
   text-align: center;
   font-size: 2rem;
-  color: rgba(6, 6, 6, 0.19);
+  color: #005500;
 }
 
 main {
@@ -71,5 +71,5 @@ a:focus, a:hover {
   font-weight: bolder;
   line-height: 1.5;
   text-align: center;
-  color: #393;
+  color: #30AA30;
 }
