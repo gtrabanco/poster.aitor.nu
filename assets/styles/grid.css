@@ -19,11 +19,13 @@ footer {
 
 a {
   text-decoration: none;
-  color: #2da;
+  color: #3A3;
+  font-weight: lighter;
 }
 
-a:focus {
-  color: #5dc;
+a:focus, a:hover {
+  color: #5d5;
+  font-weight: bolder;
 }
 
 .card img {
@@ -37,9 +39,12 @@ a:focus {
 }
 
 .card {
-  padding: 1rem;
+  padding: 0.5rem;
   background: #fff;
   grid-column: span 1;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card img {
@@ -47,13 +52,15 @@ a:focus {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 1rem 1rem;
 }
 
 .card h3 {
   margin: 0;
   display: block;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bolder;
   line-height: 1.5;
   text-align: center;
+  color: #393;
 }
