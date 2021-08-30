@@ -1,9 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 main {
   display: grid;
   gap: 1rem;
   grid-auto-flow: dense;
   grid-auto-rows: 22rem;
   grid-template-columns: repeat(auto-fill, minmax(min(100%,22rem), 1fr));
+}
+
+a {
+  text-decoration: none;
+  color: #2da;
+}
+
+a:focus {
+  color: #5dc;
 }
 
 .card img {
@@ -16,5 +31,23 @@ main {
 }
 
 .card {
+  padding: 1rem;
+  background: #fff;
   grid-column: span 1;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 0;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
 }
