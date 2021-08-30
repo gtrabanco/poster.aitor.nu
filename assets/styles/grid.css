@@ -28,11 +28,6 @@ a:focus, a:hover {
   font-weight: bolder;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
-}
-
 .featured {
   grid-column: span 2;
   display: block;
