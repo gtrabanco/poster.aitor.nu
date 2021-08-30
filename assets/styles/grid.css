@@ -1,0 +1,20 @@
+main {
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,22rem), 1fr));
+}
+
+.card img {
+  width: 100%;
+}
+
+.featured {
+  grid-column: span 2;
+  display: block;
+}
+
+.card {
+  grid-column: span 1;
+}

@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://dev.aitor.nu/$1 [R=301,L,QSA]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header unset ETag
+  Header unset X-Powered-By
+  Header set Server "Nutricionista Aitor Trabanco"
+</IfModule>
+
+
+ServerSignature Off
