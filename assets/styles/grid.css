@@ -63,3 +63,12 @@ a:focus, a:hover {
   text-transform: uppercase;
   color: #30AA30;
 }
+
+.card .download-content img {
+  display: inline;
+  width: 1rem;
+}
+.card p {
+  font-size: 0.8rem;
+  display: inline;
+}
