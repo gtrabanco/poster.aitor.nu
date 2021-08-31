@@ -1,5 +1,7 @@
 body {
   text-align: center;
+  background-color: #efe;
+  font-family: "Helvetica Neue";
 }
 
 main {
@@ -20,12 +22,12 @@ footer {
 a {
   text-decoration: none;
   color: #3A3;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 a:focus, a:hover {
   color: #5d5;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .featured {
@@ -40,6 +42,7 @@ a:focus, a:hover {
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width: minmax(100%, 22rem);
 }
 
 .card img {
@@ -50,12 +53,13 @@ a:focus, a:hover {
   border-radius: 1rem 1rem;
 }
 
-.card h3 {
+.card h2 {
   margin: 0;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bolder;
-  line-height: 1.5;
+  line-height: 3;
   text-align: center;
+  text-transform: uppercase;
   color: #30AA30;
 }
