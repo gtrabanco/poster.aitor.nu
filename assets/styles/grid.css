@@ -1,16 +1,17 @@
 body {
   text-align: center;
   background-color: #efe;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 main {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-auto-flow: dense;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%,22rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%,20rem), 1fr));
   row-gap: 2rem;
+  padding: 1em 1em 0 1em;
 }
 
 footer {
@@ -36,21 +37,16 @@ a:focus, a:hover {
 }
 
 .card {
-  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5em;
   background: #fff;
   grid-column: span 1;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0.4em 0.4em 0.4em 0 rgba(0, 0, 0, 0.2), 0 0.6em 0.2em 0 rgba(0, 0, 0, 0.19);
   min-width: minmax(100%, 22rem);
-}
-
-.card img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1rem 1rem;
 }
 
 .card h2 {
@@ -58,10 +54,38 @@ a:focus, a:hover {
   display: block;
   font-size: 1rem;
   font-weight: bolder;
-  line-height: 3;
+  line-height: 2;
   text-align: center;
   text-transform: uppercase;
   color: #30AA30;
+}
+
+.card .poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  /*
+  border: 1pt solid #eee;
+  box-shadow: 0 0.4em 0.8em 0 rgba(0, 0, 0, 0.2), 0 0.6em 0.2em 0 rgba(0, 0, 0, 0.19);
+  */
+}
+
+.card .download-content {
+  display: block;
+  box-align: baseline;
+  -webkit-box-align: baseline;
+  width: auto;
+  max-width: 30ch;
+  margin: 1em auto;
+  padding: 0.5em 0.5em;
+  line-height: 2;
+  border-radius: 0.5rem;
+  border: 2pt solid #d2691e;
+  background-color: #3A3;
+  color: #ddd;
+  opacity: 0.9;
 }
 
 .card .download-content img {
@@ -71,4 +95,11 @@ a:focus, a:hover {
 .card p {
   font-size: 0.8rem;
   display: inline;
+}
+
+.card .download-content:hover {
+  background-color: #5d5;
+  font-weight: bolder;
+  color: #000;
+  opacity: 1;
 }
