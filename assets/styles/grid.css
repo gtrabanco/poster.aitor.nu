@@ -38,7 +38,7 @@ a:focus, a:hover {
   padding: 0.5em;
   background: #fff;
   grid-column: span 1;
-  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border: 1pt solid rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   box-shadow: 0.4em 0.4em 0.4em 0 rgba(0, 0, 0, 0.2), 0 0.6em 0.2em 0 rgba(0, 0, 0, 0.19);
   min-width: minmax(100%, 22rem);
@@ -50,7 +50,6 @@ a:focus, a:hover {
   font-size: 1rem;
   font-weight: bolder;
   line-height: 2;
-  text-align: center;
   text-transform: uppercase;
   color: #30AA30;
 }
@@ -59,14 +58,11 @@ a:focus, a:hover {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
   border-radius: 1rem;
 }
 
 .card .download-content {
   display: block;
-  box-align: baseline;
-  -webkit-box-align: baseline;
   width: auto;
   max-width: 30ch;
   margin: 1em auto;
@@ -75,12 +71,11 @@ a:focus, a:hover {
   border-radius: 0.5rem;
   border: 2pt solid #d2691e;
   background-color: #3A3;
-  color: #ddd;
+  color: #fff;
   opacity: 0.9;
 }
 
 .card .download-content img {
-  display: inline;
   width: 1rem;
 }
 .card p {
