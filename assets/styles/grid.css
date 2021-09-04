@@ -59,6 +59,7 @@ a:focus, a:hover {
   width: 100%;
   height: auto;
   border-radius: 1rem;
+  border: 1pt solid #EEE;
 }
 
 .card .download-content {
