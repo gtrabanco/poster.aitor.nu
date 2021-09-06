@@ -32,6 +32,7 @@ a:focus, a:hover {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,6 +43,7 @@ a:focus, a:hover {
   border-radius: 1rem;
   box-shadow: 0.4em 0.4em 0.4em 0 rgba(0, 0, 0, 0.2), 0 0.6em 0.2em 0 rgba(0, 0, 0, 0.19);
   min-width: minmax(100%, 22rem);
+  opacity: 0.8;
 }
 
 .card h2 {
@@ -59,7 +61,6 @@ a:focus, a:hover {
   width: 100%;
   height: auto;
   border-radius: 1rem;
-  border: 1pt solid #EEE;
 }
 
 .card .download-content {
@@ -73,20 +74,22 @@ a:focus, a:hover {
   border: 2pt solid #d2691e;
   background-color: #3A3;
   color: #fff;
-  opacity: 0.9;
 }
 
 .card .download-content img {
   width: 1rem;
 }
+
 .card p {
   font-size: 0.8rem;
   display: inline;
 }
 
-.card .download-content:hover {
-  background-color: #5d5;
-  font-weight: bolder;
-  color: #000;
+.card:hover {
   opacity: 1;
+}
+
+.card:hover .download-content {
+  color: #000;
+  font-weight: bolder;
 }
