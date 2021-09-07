@@ -43,7 +43,6 @@ a:focus, a:hover {
   border-radius: 1rem;
   box-shadow: 0.4em 0.4em 0.4em 0 rgba(0, 0, 0, 0.2), 0 0.6em 0.2em 0 rgba(0, 0, 0, 0.19);
   min-width: minmax(100%, 22rem);
-  opacity: 0.8;
 }
 
 .card h2 {
@@ -85,11 +84,17 @@ a:focus, a:hover {
   display: inline;
 }
 
-.card:hover {
-  opacity: 1;
-}
+@media (hover: hover) and (pointer: fine) {
+  .card {
+    opacity: 0.7;
+  }
 
-.card:hover .download-content {
-  color: #000;
-  font-weight: bolder;
+  .card:hover {
+    opacity: 1;
+  }
+
+  .card:hover .download-content {
+    color: #000;
+    font-weight: bolder;
+  }
 }
